@@ -4,7 +4,7 @@ import { getLoginToken } from "../api-calls/getLoginToken"
 import { adminDetails } from "../data/userDetails"
 
 
-test("My account using cookie injection and mocking network request", async ({page}) => {
+test("Trigger error via cookie injection and mocking network request", async ({page}) => {
     //make a request for login token
     const loginToken = await getLoginToken(adminDetails.username, adminDetails.password)
 
